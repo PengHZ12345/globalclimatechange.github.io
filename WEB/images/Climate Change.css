@@ -1,0 +1,168 @@
+/*初始化*/
+	/*每个浏览器默认值不同，先设定统一*/
+	body,div,ul,ol,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,form,input,textarea,p   {
+		margin:0px;
+		padding:0px;
+		font-size:13px;
+		font-family:Tahoma;
+	}
+	/*去掉ul前面的小圆点*/
+	ul{
+		list-style:none;
+	}
+	/*每个浏览器默认值不同，有的浏览器图片默认有边框*/
+	img,a img{
+		border:none;
+	}
+	/*去掉a的下划线*/
+	a {
+		text-decoration:none;
+	}
+	/*鼠标在a处悬停时显示下划线*/
+	a:hover{
+		text-decoration:none;
+	}
+/*Special Cases*/
+    .body {
+		margin:0 auto;
+	}	
+	#header {
+		width:1116px;
+		height:100px;
+	}
+	.logo {
+		width:275px;
+		height:100px;
+		float:left;
+		margin-top:-8px;
+		background:url(logo.png) no-repeat 0 10px;
+	}
+	.body .search form{
+		margin:10px 20px 0 0;
+		float:right;
+		display:inline;
+		width:240px;
+		height:28px;
+	}
+	.body .search form .keywords {
+		width:190px;
+		height:23px;
+		display:inline;
+		float:left;
+		border:3px solid rgb(157,213,174);
+		margin:23px 0 0 10px;
+		background:rgb(214,239,182);
+		border-radius:10px;
+	}
+	 .body .search form .btn {
+		width:20px;
+		height:23px;
+		background:url(search_biao.png);
+		border:none;
+		cursor:pointer;
+		margin:25px 0 0 6px;
+		padding-top:2px;
+		display:inline;
+		float:left;
+	}	
+	
+	#main {
+		width:1116px;
+		height:2950px;
+	}
+	#main .main0 ul li #guidemain p{
+		width:1116px;
+		height:35px;
+		cursor:pointer;
+		font-size:30px;
+		font-weight:normal;
+		padding-top:1px;
+		padding-left:36px;
+		float:left;
+		background:url(guide.png) no-repeat 0 6px;
+	}
+	#main #div1 a{
+		font-size:20px;
+		color:black;
+		display:block;
+		width:160px;
+		height:50px;
+		float:left;
+		padding:10px 5px 0 0;
+		border:1px solid #dedede;
+		background:white;
+		text-align:center;
+		line-height:40px;
+		border-radius:10px;
+		background:rgb(231,246,253);
+	}
+	#main #div1 a:hover {
+		color:white;
+		text-decoration:underline;
+		display:block;
+		background:#5CADAD;
+	}
+	#main .main1 {
+		width:1116px;
+		height:270px;
+		border-bottom:3px dashed #C4E1E1;
+		padding:40px 0 40px 20px;
+		line-height:35px;
+		
+	}
+	#main #about {
+		border-bottom:none;
+		height:500px;
+		
+	}
+	#image{
+		width:1116px;
+		height:598px;
+		
+	}
+	#main .main1 h2{
+		font-weight:bold;
+		font-size:35px;
+		color:rgb(42,76,111);
+	}
+	#main .main1 p a{
+		font-weight:bold;
+		font-size:20px;
+		color:#5CADAD;
+	}
+	#main .main1 p a:hover {
+		text-decoration:underline;
+		color:rgb(115, 214,97);
+	}
+	#main .main1 p{
+		font-size:20px;
+		color:black;
+		padding:20px 0;
+	}
+	#footer{
+		width:1116px;
+		height:210px;
+	}
+	.ftop {
+		height:102px;
+		border-top:1px solid #bebebe;
+		border-bottom:1px solid #bebebe;
+	}
+	.ftop span a {
+		font-size:17px;
+		color:black;
+		display:block;
+		width:300px;
+		margin:40px 0 0 700px;
+	}
+	.ftop span a:hover {
+		font-weight:bold;
+	}
+    .fbottom p{
+		margin-top:10px;
+		font-size:16px;
+		text-align:center;
+		line-height:30px;
+		color:black;
+		clear:both;
+	}

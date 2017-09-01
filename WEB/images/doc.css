@@ -1,0 +1,31 @@
+.doc-main0{
+	height:110px;
+}
+#title {
+	font-size:35px;
+	font-weight:border-bottom-style;
+	color:#02C874;
+	text-align:left;
+	margin-bottom:30px;
+	margin-left:20px;
+}
+.doc {
+	width:1116px;
+	height:45px;
+	background:url(pdf.png) no-repeat 10px;
+	margin-left:20px;
+	margin-right:20px;
+	border-bottom:1px solid #dedede;
+	border-top:1px solid #dedede;
+}
+.doc span {
+	font-size:17px;
+	margin-left:64px;
+	line-height:45px;
+}
+.doc a button {
+	font-size:15px;
+	float:right;
+	margin-right:30px;
+	margin-top:10px;
+}

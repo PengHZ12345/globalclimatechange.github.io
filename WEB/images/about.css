@@ -1,0 +1,65 @@
+#main {
+	height:4000px;
+}
+.about-main0{
+	height:110px;
+}
+#title {
+	font-size:50px;
+	font-weight:border-bottom-style;
+	color:white;
+	text-align:center;
+	font-weight:bold;
+	background:#0da4d3;
+	border:2px solid #0da4d3;
+	border-radius:20px;
+}
+#title b {
+	color:rgb(250, 149, 23);
+}
+.infor {
+	width:300px;
+	height:90px;
+	margin-top:30px;
+	margin-bottom:30px;
+	padding-bottom:30px;
+	border-bottom:3px dashed #0da4d3;
+	float:right;
+}
+.name p{
+	font-size:30px;
+	color:rgb(250, 149, 23);
+	font-weight:bold;
+}
+.mail {
+	height:23px;
+	font-size:16px;
+	color:black;
+	background:url(mail.png) no-repeat ;
+}
+.intro {
+ 
+}
+.intro p {
+	line-height:30px;
+	font-size:20px;
+	text-align:justify;
+}
+.person {
+	width:520px;
+	height:700px;
+	margin-top:70px;
+}
+.person img{
+	margin:10px 25px 10px 10px;	
+	float:left;	
+}
+.person p {
+	margin:20px;
+}
+.odd {
+	float:left;
+}
+.even {
+	float:right;
+}

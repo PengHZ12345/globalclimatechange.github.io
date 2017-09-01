@@ -1,0 +1,55 @@
+#main {
+	width:1116px;
+	height:2500px;
+}
+	
+#title  h1{
+	font-size:45px;
+	font-weight:bold;
+	color:#007979;
+	text-align:center;
+}
+#title  p{
+	font-size:20px;
+	font-weight:bold;
+	color:#007979;
+	text-align:center;
+}
+.subtitle h2{
+	font-size:25px;
+	font-weight:bold;
+	color:#007979;
+	text-align:left;
+	margin-top:40px;
+	margin-bottom:30px;
+}
+.subtitle h3{
+	font-size:25px;
+	font-weight:bold;
+	color:#007979;
+	text-align:left;
+	margin-top:50px;
+}
+.dialy-main0 {
+	height:110px;
+}
+.dialy-main1 .week {
+	width:1116px;
+	height:80px;
+	background:#6FB7B7;
+	margin-top:50px;
+	margin-bottom:20px;
+	border:2px solid #bebebe;
+}
+.dialy-main1 .week h2 a{
+	display:block;
+	font-size:24px;
+	color:white;
+	line-height:80px;
+	margin-left:50px;
+	width:1116px;
+	height:80px;
+}
+.dialy-main1 .week h2 a:hover {
+	cursor:pointer;
+}

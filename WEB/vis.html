@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>DMReshaper-Visualizing Data</title>
+		<link rel="stylesheet" type="text/css" href="images/Climate Change.css" />
+		<link rel="stylesheet" type="text/css" href="images/vis.css" />
+		<style>
+			.main0 ul li #div1{
+				display:none;
+			}
+			.main0 ul li:hover #div1{
+				display:block;
+			}
+			.main0 ul li #guidemain p{
+				
+			}
+		</style>
+		<SCRIPT>
+			function isHidden(oDiv){
+			  var vDiv = document.getElementById(oDiv);
+			  vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+			}
+		</SCRIPT>		
+		<script type="text/javascript">
+			var goToWhere = function (where)
+			{
+				var me = this;
+				clearInterval (me.interval);
+				me.site = [];
+				var dom = !/.*chrome.*/i.test (navigator.userAgent) ? document.documentElement : document.body;
+				var height = !!where ? dom.scrollHeight : 0;
+				me.interval = setInterval (function ()
+				{
+					var speed = (height - dom.scrollTop) / 16;
+					if (speed == me.site[0])
+					{
+						clearInterval (me.interval);
+						return null;
+					}
+					dom.scrollTop += speed;
+					me.site.unshift (speed);
+				}, 16);
+			};
+		</script>
+	</head>
+	<body>
+		<div class="body" id="header"> <!--将头部按功能分块-->
+		   <a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+			<div class="search"> <!--Search to find infor-->
+				<form action="doc.html">
+					<input class="keywords" type="text" name="keywords" />
+					<input class="btn" type="submit" value="" />
+				</form>
+			</div>
+		 </div>
+		</div>		
+		<div class="body" id="main" style="height:4000px;">
+			<div class="main0">
+				<ul>
+					<li>
+						<div id="guidemain"><p>Guide</p></div>
+						<div id="div1">
+							<a href="Climate Change.html">Home</a>
+							<a href="dialy.html" target="_blank">Weeklies</a>
+							<a href="outcome.html" target="_blank">Outcomes</a>
+							<a href="doc.html" target="_blank">Documents</a>
+							<a href="vis.html" target="_blank">Visualization</a>
+							<a href="about.html" target="_blank">About us</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="vis-main0"></div>
+			<div id="back-up" onclick="goToWhere(0)" style="background:url(images/up.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 130px;"></div>
+			<div id="back-up" onclick="goToWhere(1)" style="background:url(images/down.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 70px;"></div>
+			<div id="title">Visualization</div>
+			<div id="mulu">
+				<div style="cursor:hand" onclick="isHidden('mulu1')" class="circle-wrapper" id="c1">
+					<a href="#"><img src="images/data.png" ></a>
+				</div>
+				<div id="mulu1" style="display:none" class="mumore">
+					<a id="co" href="Climate Change.html"><img src="images/co2.png" /></a>
+					<a id="pop" href="dialy.html" target="_blank"><img src="images/pop.png" /></a>
+					<a id="tem" href="outcome.html" target="_blank"><img src="images/tem.png" /></a>
+					<a id="gdp" href="doc.html" target="_blank"><img src="images/gdp.png" /></a>
+					<a id="forest" href="vis.html" target="_blank"><img src="images/forest.png" /></a>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('mulu2')" class="circle-wrapper" id="c2">
+					<a href="#"><img src="images/pro.png" ></a>
+				</div>
+				<div id="mulu2" style="display:none" class="mumore">
+					<a id="ci" href="Climate Change.html"><img src="images/ci.png" /></a>
+					<a id="dev" href="dialy.html" target="_blank"><img src="images/dev.png" /></a>
+					<a id="edu" href="outcome.html" target="_blank"><img src="images/edu.png" /></a>
+					<a id="frame" href="doc.html" target="_blank"><img src="images/frame.png" /></a>
+					<a id="un" href="vis.html" target="_blank"><img src="images/un.png" /></a>
+				</div>		
+			</div>
+			<div class="de" id="data">
+				<h2 style="font-size:28px; color:rgb(92,172,172); margin-top:260px;">Data</h2>
+				<!--<div class='tableauPlaceholder' id='viz1503761589159' style='position: relative'>
+					<noscript>
+					<a href='#'><img alt='Annual Average Temperature (1960--2015) ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4T&#47;4TB6SQW4X&#47;1_rss.png' style='border: none' /></a>
+					</noscript>
+					<object class='tableauViz'  style='display:none;'>
+						<param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='path' value='shared&#47;4TB6SQW4X' /> 
+						<param name='toolbar' value='no' />
+						<param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;4T&#47;4TB6SQW4X&#47;1.png' /> 
+						<param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' />
+						<param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' />
+						<param name='display_count' value='yes' /><param name='filter' value='publish=yes' />
+					</object>
+				</div>               
+				<script type='text/javascript'>                    
+					var divElement = document.getElementById('viz1503761589159');               
+					var vizElement = divElement.getElementsByTagName('object')[0];              
+					vizElement.style.width='50%';vizElement.style.height=(divElement.offsetWidth*0.5)+'px';     
+					var scriptElement = document.createElement('script');                
+					scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';           
+					vizElement.parentNode.insertBefore(scriptElement, vizElement);              
+				</script>-->
+			</div>
+			<div class="de" id="result">
+				<h2 style="font-size:28px; color:rgb(161,196,91); margin-bottom:30px;">Result</h2>
+			</div>
+			<div class="odd" id="fra">
+				<iframe src="graph/framework.pdf" name="about" width="530px" marginwidth="0" height="400px" marginheight="0" align="top" scrolling="auto"></iframe>
+			</div>
+			<div style="float:left; margin-left:40px; width:520px; height:450px; background:red;"><p>vsdhjfhsfchscksfcskcfd</p></div>
+			<div class="even" id="gi">
+				<img src="graph/Carbon Ins.png" width=530 height=400 onMouseover="this.width=700; this.height=500" onMouseout="this.width=530;this.height=400" style="z-index:5;" />
+			</div>
+			<div style="float:left; width:520px; height:450px; background:red;"><p>vsdhjfhsfchscksfcskcfd</p></div>
+			<div class="odd" id="se">
+				<iframe src="graph/Sust Edu.png" name="about" width="530px" marginwidth="0" height="400px" marginheight="0" align="top" scrolling="auto"></iframe>
+			</div>
+			<div style="float:left; margin-left:40px; width:520px; height:450px; background:red;"><p>vsdhjfhsfchscksfcskcfd</p></div>
+			<div class="even" id="gsdsc">
+				<iframe src="graph/sdsc.png" name="about" width="530px" marginwidth="0" height="400px" marginheight="0" align="top" scrolling="auto"></iframe>
+			</div>
+			<div style="float:left; width:520px; height:450px; background:red;"><p>vsdhjfhsfchscksfcskcfd</p></div>
+			<div class="odd" id="un2">
+				<iframe src="graph/un.pdf" name="about" width="530px" marginwidth="0" height="400px" marginheight="0" align="top" scrolling="auto"></iframe>
+			</div>
+			<div style="float:left; margin-left:40px; width:520px; height:450px; background:red;"><p>vsdhjfhsfchscksfcskcfd</p></div>
+		</div>	
+		<div class="body" id="footer">
+			<div class="ftop">
+				<a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+				<span><a href="#" target="_blank">Global Challenges@XJTLU</a></span>
+			</div>
+			<div class="fbottom">
+				<p>Address: XJTLU, 111 Renai Road, Suzhou, Jiangsu, China</p>
+				<p>Copyright@2017 Hu Zepeng</p>
+			</div>
+		</div>
+
+	</body>
+</html>

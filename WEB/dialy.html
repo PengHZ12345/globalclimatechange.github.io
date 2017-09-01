@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>DMReshaper-Weeklies</title>
+		<link rel="stylesheet" type="text/css" href="images/Climate Change.css" />
+		<link rel="stylesheet" type="text/css" href="images/dialy.css" />
+		<style>
+			.main0 ul li #div1{
+				display:none;
+			}
+			.main0 ul li:hover #div1{
+				display:block;
+			}
+			.main0 ul li #guidemain p{
+				
+			}
+		</style>
+		<style>
+			#time #img1 img area .detail{
+				display:none;
+			}
+			#time #img1 img area .detail{
+				display:block;
+			}
+			.main0 ul li #guidemain p{
+				
+			}
+		</style>
+		<SCRIPT>
+			function isHidden(oDiv){
+			  var vDiv = document.getElementById(oDiv);
+			  vDiv.style.display = (vDiv.style.display == 'none')?'block':'none';
+			}
+		</SCRIPT>
+		<script type="text/javascript">
+			var goToWhere = function (where)
+			{
+				var me = this;
+				clearInterval (me.interval);
+				me.site = [];
+				var dom = !/.*chrome.*/i.test (navigator.userAgent) ? document.documentElement : document.body;
+				var height = !!where ? dom.scrollHeight : 0;
+				me.interval = setInterval (function ()
+				{
+					var speed = (height - dom.scrollTop) / 16;
+					if (speed == me.site[0])
+					{
+						clearInterval (me.interval);
+						return null;
+					}
+					dom.scrollTop += speed;
+					me.site.unshift (speed);
+				}, 16);
+			};
+		</script>
+	</head>
+	<body>
+		<div class="body" id="header"> <!--将头部按功能分块-->
+		   <a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+			<div class="search"> <!--Search to find infor-->
+				<form action="doc.html">
+					<input class="keywords" type="text" name="keywords" />
+					<input class="btn" type="submit" value="" />
+				</form>
+			</div>
+		 </div>
+		</div>		
+		<div class="body" id="main">
+			<div class="main0">
+				<ul>
+					<li>
+						<div id="guidemain"><p>Guide</p></div>
+						<div id="div1">
+							<a href="Climate Change.html">Home</a>
+							<a href="dialy.html" target="_blank">Weeklies</a>
+							<a href="outcome.html" target="_blank">Outcomes</a>
+							<a href="doc.html" target="_blank">Documents</a>
+							<a href="vis.html" target="_blank">Visualization</a>
+							<a href="about.html" target="_blank">About us</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="dialy-main0"></div>
+			<div id="back-up" onclick="goToWhere(0)" style="background:url(images/up.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 130px;"></div>
+			<div id="back-up" onclick="goToWhere(1)" style="background:url(images/down.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 70px;"></div>
+			<div id="title">
+				<h1>Weeklies</h1>
+				<p>Timeline shows our weekly results. More details are under the timeline. ;) </p>
+			</div>
+			<div class="subtitle">
+				<h2>Timeline</h2>
+			</div>
+			<div id="time" style="width:1116px; height:237px; background:url(images/time.png);">
+					<img src="dialy/week1.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:169px; top:450px; z-index:10;" />
+					<img src="dialy/week2.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:277px; top:519px; z-index:9;" />
+				<a href="vis.html#fra" target="_blank">
+					<img src="dialy/week3.png" usemap="#img1" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:383px; top:450px; z-index:8;" />	
+				</a>
+				<a href="vis.html#gi" target="_blank">
+					<img src="dialy/week4.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:491px; top:519px; z-index:7;" />
+				</a>	
+					<img src="dialy/week5.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:599px; top:450px; z-index:6;" />
+				<a href="vis.html#gsdsc" target="_blank">	
+					<img src="dialy/week6.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:708px; top:519px; z-index:5;" />
+				</a>	
+				<a href="vis.html#un2" target="_blank">	
+					<img src="dialy/week7.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:813px; top:450px; z-index:4;" />
+				</a>	
+					<img src="dialy/week8.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:922px; top:519px; z-index:3;" />
+					<img src="dialy/week9.png" width=80 height=45 onMouseover="this.width=210; this.height=124" onMouseout="this.width=80;this.height=45" style="position:absolute; left:1029px; top:450px; z-index:2;" />
+				<a href="outcome.html" target="_blank">				
+					<img src="dialy/week10.png" width=80 height=45 onMouseover="this.width=208; this.height=123" onMouseout="this.width=80;this.height=45" style="position:absolute; left:1141px; top:519px; z-index:1;" />
+				</a>
+			</div>
+			<div class="subtitle">
+				<h3>Details</h3>
+			</div>
+			<div  class="dialy-main1">
+		　　　　<div style="cursor:hand" onclick="isHidden('dialy-div1')" class="week odd" id="w1">
+					<h2><a> Week 1_June 26-30</a></h2>
+				</div>
+				<div id="dialy-div1" style="display:none">
+					<iframe src="dialy/week1.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div2')" class="week even" id="w2">
+					<h2><a>Week 2_July 3-7</a></h2>
+				</div>
+				<div id="dialy-div2" style="display:none">
+					<iframe src="dialy/week2.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div3')" class="week odd" id="w3">
+					<h2><a>Week 3_July 10-14</a></h2>
+				</div>
+				<div id="dialy-div3" style="display:none">
+					<iframe src="dialy/week3.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div4')" class="week even" id="w4">
+					<h2><a>Week 4_July 17-21</a></h2>
+				</div>
+				<div id="dialy-div4" style="display:none">
+					<iframe src="dialy/week4.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div5')" class="week odd" id="w5">
+					<h2><a>Week 5_July 24-28</a></h2>
+				</div>
+				<div id="dialy-div5" style="display:none">
+					<iframe src="dialy/week5.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div6')" class="week even" id="w6">
+					<h2><a>Week 6_July 31-August 4</a></h2>
+				</div>
+				<div id="dialy-div6" style="display:none">
+					<iframe src="dialy/week6.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe></div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div7')" class="week odd" id="w7">
+					<h2><a>Week 7_August 7-11</a></h2>
+				</div>
+				<div id="dialy-div7" style="display:none">
+					<iframe src="dialy/week7.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div8')" class="week even" id="w8">
+					<h2><a>Week 8_August 14-18</a></h2>
+				</div>
+				<div id="dialy-div8" style="display:none">
+					<iframe src="dialy/week8.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div9')" class="week odd" id="w9">
+					<h2><a>Week 9_August 21-25</a></h2>
+				</div>
+				<div id="dialy-div9" style="display:none">
+					<iframe src="dialy/week9.pdf" name="about" width="1116px" marginwidth="0" height="600px" marginheight="0" align="top" scrolling="auto"></iframe>
+				</div>
+				<div style="cursor:hand" onclick="isHidden('dialy-div10')" class="week even" id="w10">
+					<h2><a>Week 10_August 28-September</a></h2>
+				</div>
+				<div id="dialy-div10" style="display:none">Empty</div>				
+			</div>
+		</div>		
+		<div class="body" id="footer">
+			<div class="ftop">
+				<a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+				<span><a href="#" target="_blank">Global Challenges@XJTLU</a></span>
+			</div>
+			<div class="fbottom">
+				<p>Address: XJTLU, 111 Renai Road, Suzhou, Jiangsu, China</p>
+				<p>Copyright@2017 Hu Zepeng</p>
+			</div>
+		</div>
+
+	</body>
+</html>

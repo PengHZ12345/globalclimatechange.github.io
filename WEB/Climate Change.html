@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>Development Mode Reshaper</title>
+		<link rel="stylesheet" type="text/css" href="images/Climate Change.css" />
+		<style>
+			.main0 ul li #div1{
+				display:none;
+			}
+			.main0 ul li:hover #div1{
+				display:block;
+			}
+			.main0 ul li #guidemain p{
+				
+			}
+		</style>
+		<script type="text/javascript">
+			var goToWhere = function (where)
+			{
+				var me = this;
+				clearInterval (me.interval);
+				me.site = [];
+				var dom = !/.*chrome.*/i.test (navigator.userAgent) ? document.documentElement : document.body;
+				var height = !!where ? dom.scrollHeight : 0;
+				me.interval = setInterval (function ()
+				{
+					var speed = (height - dom.scrollTop) / 16;
+					if (speed == me.site[0])
+					{
+						clearInterval (me.interval);
+						return null;
+					}
+					dom.scrollTop += speed;
+					me.site.unshift (speed);
+				}, 16);
+			};
+		</script>
+		<script type="text/javascript">
+			window.onload=function(){
+				var oBody=document.getElementById('image');
+				var oS=oBody.style;
+				var curIndex=0;
+				var images = new Array()  
+				function preload(){  
+					for (i = 0; i < preload.arguments.length; i++) {  
+						images[i] = new Image()  
+						images[i].src = preload.arguments[i]  
+					}  
+				}  
+				preload(  
+					"images/1.png",  
+					"images/2.png",  
+					"images/3.png", 
+					"images/4.png",  
+					"images/5.png",  
+					"images/6.png" 
+				)
+				function BgChenge(){
+					var arr=new Array();
+					 arr[0]="1.png";
+					 arr[1]="2.png";
+					 arr[2]="3.png";
+					 arr[3]="4.png";
+					 arr[4]="5.png";
+					 arr[5]="6.png";
+					if (curIndex==arr.length-1) 
+					{
+						curIndex=0;
+					}
+					else
+					{
+						curIndex+=1;
+					}
+						oS.backgroundImage='url(images/'+arr[curIndex];
+					};
+					function LoadMethod(){
+						preload();
+						BgChenge();
+					};
+				setInterval(LoadMethod,650);
+			};
+		</script>
+		<style type="text/css">
+    .click::before {
+    content:'\003E';
+    font-size:20px;
+	color:#5CADAD;
+	font-weight:bold;
+}
+</style>
+	</head>
+	<body>
+		<div class="body" id="header"> <!--将头部按功能分块-->
+			<a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+			<div class="search"> <!--Search to find infor-->
+				<form action="doc.html">
+					<input class="keywords" type="text" name="keywords" />
+					<input class="btn" type="submit" value="" />
+				</form>
+			</div>
+		</div>		
+		<div class="body" id="main">
+		<div class="main0">
+		<ul>
+			<li>
+				<div id="guidemain"><p>Guide</p></div>
+				<div id="div1">
+					<a href="Climate Change.html">Home</a>
+					<a href="dialy.html" target="_blank">Weeklies</a>
+					<a href="outcome.html" target="_blank">Outcomes</a>
+					<a href="doc.html" target="_blank">Documents</a>
+					<a href="vis.html" target="_blank">Visualization</a>
+					<a href="about.html" target="_blank">About us</a>
+				</div>
+			</li>
+		</ul>
+		</div>	
+		<div id="image" style="background:url(images/1.png) 0 -40px;">
+		
+		</div>
+		<div id="back-up" onclick="goToWhere(0)" style="background:url(images/up.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 130px;"></div>
+		<div id="back-up" onclick="goToWhere(1)" style="background:url(images/down.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 70px;"></div>
+		<div class="main1" id="daily">
+			<h2>WEEKLIES</h2>
+			<p>This is the display board of our team’s daily work. By inspiring brainstorming and the daily meetings conducted, we record down all sorts of ideas and key words of our findings. Please click here for more details about our daily progress. </p>
+			<p class="click"><a href="dialy.html" target="_blank"> Click for more</a></p>
+		</div>
+		<div class="main1" id="outcome">
+			<h2>OUTCOMES</h2>
+			<p>Are you interested in where have we finally arrived at? If the answer is yes, please don’t hesitate to click on this session to have a look at our final report. You can read the abstract part for a glance as a summary of our outcome. Based on various statistical analysis and simulation, we concluded a global governance framework, which compared to the current adopted one, will have distinct advantages on fast response and high involvement among more participating countries. </p>
+		    <p class="click"><a href="outcome.html" target="_blank"> Click for more</a></p>
+		</div>
+		<div class="main1" id="doc">
+			<h2>DOCUMENTS</h2>
+			<p>During the 3-month research project, we have spent 40% of our time reading the most up-to-date and informative academic articles, which were written by various national scientists and the professors in world-class universities. Standing on the shoulders of giants, we got the chance to locate the problems of the current global governance framework in several specific points, and further seek out the most efficient solution. </p>
+			<p class="click"><a href="doc.html" target="_blank"> Click for more</a></p>
+		</div>
+		<div class="main1" id="graph">
+			<h2>VISUALIZATION</h2>
+			<p>To enable our audience find it easier to understand our project, especially the outcome, we upload various graphs here which can be used as an overview. All the data resources are attached under each graph, for your further interest in the original research.   </p>
+			<p class="click"><a href="vis.html" target="_blank"> Click for more</a></p>
+		</div>
+		<div class="main1" id="about">
+			<h2>ABOUT US</h2>
+			<p>This is a team composed of 8 girls from various majors in XJTLU, including Accounting, Economics, Finance, Engineering and Mathematics.
+			<br/><br/>ABOUT XJTLU<br />Founded in 2006, we are the largest international joint venture university in China, a partnership between Xi'an Jiaotong University and the University of Liverpool.　Link: <a href="http://www.xjtlu.edu.cn/en/" target="_blank" style="color:red;">http://www.xjtlu.edu.cn/en/</a>
+			<br /><br/>VISION<br />To become a research-led international university in China and a Chinese university recognised internationally for its unique features in learning and teaching, research, social service, and education management.
+			<br /><br/>MISSION<br />Educate technical and managerial professionals with international perspectives and competitive capabilities Integrate global economic and social development with expertise in business and technology With our unique focuses and features, conduct research in areas where humanity faces severe challenges.
+			<br />Explore new models for higher education that will exert a strong influence on the development of education in China and the world.<br />
+			<br /><br/>If you have any futher ideas about climate change and want to share with us, please <a href="about.html" style="color:rgb(250,149,23); text-decoration:underline;" >contact us</a>.
+			</p>
+			<p class="click"><a href="about.html" target="_blank"> Click for more</a></p>
+		</div>
+		</div>	
+		<div class="body" id="footer">
+			<div class="ftop">
+				<a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+				<span><a href="#" target="_blank">Global Challenges@XJTLU</a></span>
+			</div>
+			<div class="fbottom">
+				<p>Address: XJTLU, 111 Renai Road, Suzhou, Jiangsu, China</p>
+				<p>Copyright@2017 Hu Zepeng</p>
+			</div>
+		</div>
+
+	</body>
+</html>

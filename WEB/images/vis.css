@@ -1,0 +1,128 @@
+.vis-main0{
+	height:110px;
+}
+#title {
+	font-size:45px;
+	font-weight:bold;
+	color:#007979;
+	text-align:center;
+	margin-bottom:20px;
+}
+.circle-wrapper{
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  border: 1px solid #ddd;
+  position: relative;
+  overflow: hidden;
+}
+#c1 {
+  position:absolute;
+  left:341px;
+  top:331px;
+}
+#c2 {
+  position:absolute;
+  left:907px;
+  top:331px;
+}
+.circle-wrapper img{
+  display: inline-block;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  -webkit-transition: .3s;
+  transition: .3s;
+  position: absolute;
+  -webkit-transition: -webkit-transform 2s;
+}
+.circle-wrapper img:hover {
+  -webkit-transform: scale(2);
+  transform: scale(2);
+  -webkit-transform: rotate(360deg);
+}
+.mumore a{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.mumore a img{
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.mumore a img:hover {
+   display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+#mulu1 #tem {
+	position:absolute;
+	left:350px;
+	top:230px;
+}
+#mulu1 #co {
+	position:absolute;
+	left:272px;
+	top:270px;
+}
+#mulu1 #pop {
+	position:absolute;
+	left:260px;
+	top:373px;
+}
+#mulu1 #gdp {
+	position:absolute;
+	left:452px;
+	top:260px;
+}
+#mulu1 #forest {
+	position:absolute;
+	left:385px;
+	top:414px;
+}
+#mulu2 #ci {
+	position:absolute;
+	left:885px;
+	top:230px;
+}
+#mulu2 #dev {
+	position:absolute;
+	left:772px;
+	top:270px;
+}
+#mulu2 #edu {
+	position:absolute;
+	left:760px;
+	top:373px;
+}
+#mulu2 #frame {
+	position:absolute;
+	left:980px;
+	top:260px;
+}
+#mulu2 #un {
+	position:absolute;
+	left:885px;
+	top:420px;
+}
+.odd {
+	width:530px; 
+	height:450px; 
+	float:left;
+	background:pink;
+}
+.even {
+	width:530px; 
+	height:450px; 
+	float:right;
+	background:pink;
+}
+
+

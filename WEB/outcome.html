@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<title>DMReshaper-Outcome</title>
+		<link rel="stylesheet" type="text/css" href="images/Climate Change.css" />
+		<link rel="stylesheet" type="text/css" href="images/outcome.css" />
+		<style>
+			.main0 ul li #div1{
+				display:none;
+			}
+			.main0 ul li:hover #div1{
+				display:block;
+			}
+			.main0 ul li #guidemain p{
+				
+			}
+		</style>
+		<script type="text/javascript">
+			var goToWhere = function (where)
+			{
+				var me = this;
+				clearInterval (me.interval);
+				me.site = [];
+				var dom = !/.*chrome.*/i.test (navigator.userAgent) ? document.documentElement : document.body;
+				var height = !!where ? dom.scrollHeight : 0;
+				me.interval = setInterval (function ()
+				{
+					var speed = (height - dom.scrollTop) / 16;
+					if (speed == me.site[0])
+					{
+						clearInterval (me.interval);
+						return null;
+					}
+					dom.scrollTop += speed;
+					me.site.unshift (speed);
+				}, 16);
+			};
+		</script>
+	</head>
+	<body>
+		<div class="body" id="header"> <!--将头部按功能分块-->
+		   <a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+			<div class="search"> <!--Search to find infor-->
+				<form action="doc.html">
+					<input class="keywords" type="text" name="keywords" />
+					<input class="btn" type="submit" value="" />
+				</form>
+			</div>
+		 </div>
+		</div>		
+		<div class="body" id="main">
+		<div class="main0">
+			<ul>
+				<li>
+					<div id="guidemain"><p>Guide</p></div>
+					<div id="div1">
+						<a href="Climate Change.html">Home</a>
+						<a href="dialy.html" target="_blank">Weeklies</a>
+						<a href="outcome.html" target="_blank">Outcomes</a>
+						<a href="doc.html" target="_blank">Documents</a>
+						<a href="vis.html" target="_blank">Visualization</a>
+						<a href="about.html" target="_blank">About us</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+		<div class="out-main0"></div>
+		<div id="back-up" onclick="goToWhere(0)" style="background:url(images/up.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 130px;"></div>
+		<div id="back-up" onclick="goToWhere(1)" style="background:url(images/down.png);  height: 40px; width: 40px; position: fixed; cursor: pointer; right: 10px; bottom: 70px;"></div>
+		<div id="title">Outcomes</div>
+		</div>	
+		<div class="body" id="footer">
+			<div class="ftop">
+				<a href="Climate Change.html" title="Development Mode Reshaper"><div class="logo"></div></a>
+				<span><a href="#" target="_blank">Global Challenges@XJTLU</a></span>
+			</div>
+			<div class="fbottom">
+				<p>Address: XJTLU, 111 Renai Road, Suzhou, Jiangsu, China</p>
+				<p>Copyright@2017 Hu Zepeng</p>
+			</div>
+		</div>
+
+	</body>
+</html>
